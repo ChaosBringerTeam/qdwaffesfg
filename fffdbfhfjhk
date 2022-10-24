@@ -1,0 +1,169 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88 
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER
+]=]
+
+-- Instances: 15 | Scripts: 3 | Modules: 0
+local G2L = {};
+
+-- StarterGui.Keydark
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["Name"] = [[Keydark]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+-- StarterGui.Keydark.Key
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(19, 19, 19);
+G2L["2"]["AnchorPoint"] = Vector2.new(0.5, 0);
+G2L["2"]["Size"] = UDim2.new(0, 461, 0, 377);
+G2L["2"]["Position"] = UDim2.new(0.5, 0, -0.6000000238418579, 0);
+G2L["2"]["Name"] = [[Key]];
+
+-- StarterGui.Keydark.Key.UICorner
+G2L["3"] = Instance.new("UICorner", G2L["2"]);
+G2L["3"]["CornerRadius"] = UDim.new(0, 10);
+
+-- StarterGui.Keydark.Key.vpn_key
+G2L["4"] = Instance.new("ImageButton", G2L["2"]);
+G2L["4"]["ZIndex"] = 2;
+G2L["4"]["ImageColor3"] = Color3.fromRGB(255, 171, 255);
+G2L["4"]["LayoutOrder"] = 4;
+G2L["4"]["Image"] = [[rbxassetid://3926307971]];
+G2L["4"]["ImageRectSize"] = Vector2.new(36, 36);
+G2L["4"]["Size"] = UDim2.new(0, 45, 0, 45);
+G2L["4"]["Name"] = [[vpn_key]];
+G2L["4"]["ImageRectOffset"] = Vector2.new(44, 324);
+G2L["4"]["Position"] = UDim2.new(0.45010846853256226, 0, 0.15251988172531128, 0);
+G2L["4"]["BackgroundTransparency"] = 1;
+
+-- StarterGui.Keydark.Key.TextLabel
+G2L["5"] = Instance.new("TextLabel", G2L["2"]);
+G2L["5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5"]["TextSize"] = 16;
+G2L["5"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["5"]["Size"] = UDim2.new(0, 452, 0, 50);
+G2L["5"]["Text"] = [[Please enter the key, the key could be found in our discord!]];
+G2L["5"]["Font"] = Enum.Font.Gotham;
+G2L["5"]["BackgroundTransparency"] = 1;
+G2L["5"]["Position"] = UDim2.new(0.008676767349243164, 0, 0.46684348583221436, 0);
+
+-- StarterGui.Keydark.Key.TextLabel
+G2L["6"] = Instance.new("TextLabel", G2L["2"]);
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["TextSize"] = 30;
+G2L["6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["6"]["Text"] = [[RiceHub - Key System]];
+G2L["6"]["Font"] = Enum.Font.Gotham;
+G2L["6"]["BackgroundTransparency"] = 1;
+G2L["6"]["Position"] = UDim2.new(0.2841648459434509, 0, 0.36339521408081055, 0);
+
+-- StarterGui.Keydark.Key.TextBox
+G2L["7"] = Instance.new("TextBox", G2L["2"]);
+G2L["7"]["BorderSizePixel"] = 0;
+G2L["7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["7"]["TextSize"] = 20;
+G2L["7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7"]["BackgroundTransparency"] = 1;
+G2L["7"]["PlaceholderText"] = [[Please enter the key here.]];
+G2L["7"]["Size"] = UDim2.new(0, 361, 0, 37);
+G2L["7"]["Text"] = [[]];
+G2L["7"]["Position"] = UDim2.new(0.10845986753702164, 0, 0.633952260017395, 0);
+G2L["7"]["Font"] = Enum.Font.SourceSans;
+
+-- StarterGui.Keydark.Key.TextBox.Frame
+G2L["8"] = Instance.new("Frame", G2L["7"]);
+G2L["8"]["BackgroundColor3"] = Color3.fromRGB(47, 47, 47);
+G2L["8"]["Size"] = UDim2.new(0, 361, 0, 0);
+G2L["8"]["Position"] = UDim2.new(0, 0, 0.837837815284729, 0);
+
+-- StarterGui.Keydark.Key.TextBox.Frame.
+G2L["9"] = Instance.new("Script", G2L["8"]);
+G2L["9"]["Name"] = [[]];
+
+-- StarterGui.Keydark.Key.TextButton
+G2L["a"] = Instance.new("TextButton", G2L["2"]);
+G2L["a"]["TextSize"] = 25;
+G2L["a"]["BackgroundColor3"] = Color3.fromRGB(255, 171, 255);
+G2L["a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["a"]["Text"] = [[Submit]];
+G2L["a"]["Font"] = Enum.Font.SourceSans;
+G2L["a"]["Position"] = UDim2.new(0.28199565410614014, 0, 0.7745358347892761, 0);
+
+-- StarterGui.Keydark.Key.TextButton.UICorner
+G2L["b"] = Instance.new("UICorner", G2L["a"]);
+G2L["b"]["CornerRadius"] = UDim.new(0, 10);
+
+-- StarterGui.Keydark.Key.TextButton.LocalScript
+G2L["c"] = Instance.new("LocalScript", G2L["a"]);
+
+
+-- StarterGui.Keydark.Key.TextLabel
+G2L["d"] = Instance.new("TextLabel", G2L["2"]);
+G2L["d"]["BackgroundColor3"] = Color3.fromRGB(255, 171, 255);
+G2L["d"]["TextSize"] = 19;
+G2L["d"]["TextColor3"] = Color3.fromRGB(255, 171, 255);
+G2L["d"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["d"]["Text"] = [[Click here for the Discord invite]];
+G2L["d"]["Font"] = Enum.Font.Gotham;
+G2L["d"]["BackgroundTransparency"] = 1;
+G2L["d"]["Position"] = UDim2.new(0.28199565410614014, 0, 0.8912466764450073, 0);
+
+-- StarterGui.Keydark.Key.TextLabel.LocalScript
+G2L["e"] = Instance.new("LocalScript", G2L["d"]);
+
+
+-- StarterGui.Keydark.Key.LocalScript
+G2L["f"] = Instance.new("LocalScript", G2L["2"]);
+
+
+-- StarterGui.Keydark.Key.TextButton.LocalScript
+local function C_c()
+local script = G2L["c"];
+	local jhfhioi = "c^U8qLVRj}aX#rhj{hEV6T[G?S[p3+SEz=cYodr!A'A6di67'{5Nvf/!8&tPtr'"
+	local textbox = script.Parent.Parent.TextBox
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		if textbox.Text == jhfhioi then
+			loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\65\105\100\97\110\109\97\110\49\52\47\82\105\99\101\72\117\98\47\109\97\105\110\47\76\111\97\100\101\114\34\41\41\40\41\10")()
+		else
+			warn("Wrong key!")
+			
+		end
+	end)
+end;
+task.spawn(C_c);
+-- StarterGui.Keydark.Key.TextLabel.LocalScript
+local function C_e()
+local script = G2L["e"];
+	script.Parent.MouseButton1Click:Connect(function()
+	
+		game:GetService("StarterGui"):SetCore("SendNotification", {
+			Title = "Copied into clipboard!",
+			Text = "The invite is now in your clipboard!",
+			Duration = 1, 
+		}
+		)
+	
+	
+		setclipboard("https://discord.gg/srqgjkP7Zc")
+	end)
+end;
+task.spawn(C_e);
+-- StarterGui.Keydark.Key.LocalScript
+local function C_f()
+local script = G2L["f"];
+	wait(0.5)
+	
+	script.Parent:TweenPosition(UDim2.new(0.5, 0,0.5, 0))
+end;
+task.spawn(C_f);
+
+return G2L["1"], require;
